@@ -1,0 +1,323 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    outline-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* rem适配 */
+
+@media (min-width: 320px) {
+    html {
+        font-size: 42.6667px;
+    }
+}
+
+@media (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+
+@media (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media (min-width: 448px) {
+    html {
+        font-size: 59.7333px;
+    }
+}
+
+@media (min-width: 480px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media (min-width: 512px) {
+    html {
+        font-size: 68.2667px;
+    }
+}
+
+@media (min-width: 544px) {
+    html {
+        font-size: 72.5333px;
+    }
+}
+
+@media (min-width: 576px) {
+    html {
+        font-size: 76.8px;
+    }
+}
+
+@media (min-width: 608px) {
+    html {
+        font-size: 81.0667px;
+    }
+}
+
+@media (min-width: 640px) {
+    html {
+        font-size: 85.3333px;
+    }
+}
+
+@media (min-width: 750px) {
+    html {
+        font-size: 100px;
+    }
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent
+}
+
+
+/* 以下为公共样式 */
+
+
+/* 清除浮动 */
+
+.clearfixed::after {
+    content: '';
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+
+/* 箭头 */
+
+.arrow-right::after {
+    content: '';
+    width: 0.15rem;
+    height: 0.15rem;
+    display: inline-block;
+    border: 1px solid #CECCCF;
+    border-top-width: 0;
+    border-left-width: 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: relative;
+    top: -0.02rem;
+    left: 0.02rem;
+}
+
+
+/* 色值 */
+
+.color-main {
+    color: #1FCC9E;
+}
+
+.color-red {
+    color: red;
+    font-size: 0.36rem;
+}
+
+.color-ceccf {
+    color: #CECCCF;
+}
+
+.color-9f {
+    color: #9F9F9F;
+}
+
+.color-FF9209 {
+    color: #FF9209;
+}
+
+
+/* margin */
+
+.mlr-10 {
+    margin: 0 0.1rem;
+}
+
+.mt-10 {
+    margin-top: 0.1rem;
+}
+
+.ml-10 {
+    margin-left: 0.1rem;
+}
+
+.ml-20 {
+    margin-left: 0.2rem;
+}
+
+
+/* padding */
+
+.pt-10 {
+    padding-top: 0.2rem;
+}
+
+
+/* 字体 */
+
+.font-10 {
+    font-size: 0.22rem;
+}
+
+.font-30 {
+    font-size: 0.3rem;
+}
